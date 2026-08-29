@@ -1,0 +1,49 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fbf6f0;color:#3e2949;font-family:Poppins,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 20%,rgba(255,214,232,.35),transparent 25%),radial-gradient(circle at 80% 30%,rgba(218,200,255,.32),transparent 27%);z-index:-2}
+#petals{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
+.petal{position:absolute;top:-30px;width:12px;height:18px;background:#e9a8c3;border-radius:100% 0 100% 0;opacity:.7;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(500deg);opacity:0}}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:50px 22px;position:relative;background:linear-gradient(135deg,#4b2869,#70489b 48%,#a76591);color:white;overflow:hidden}
+.hero:after{content:"";position:absolute;width:650px;height:650px;border:1px solid rgba(255,255,255,.15);border-radius:50%;top:-250px;right:-220px;box-shadow:0 0 0 45px rgba(255,255,255,.025),0 0 0 90px rgba(255,255,255,.02)}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:.75rem;font-weight:600;opacity:.78;margin:0 0 14px}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(3rem,9vw,6.8rem);line-height:.95;margin:0;text-shadow:0 8px 30px rgba(0,0,0,.18)}
+.hero h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2.3rem,6vw,4.5rem);margin:8px 0 2px;color:#ffe9b6}
+.hero-sub{letter-spacing:2px;font-size:.9rem;margin:0 0 28px}
+.ornament{color:#f8d999;letter-spacing:8px;margin:18px 0}
+.gold-btn{border:1px solid #f6d895;background:rgba(255,255,255,.09);color:white;padding:14px 24px;border-radius:50px;font:500 1rem Poppins;cursor:pointer;transition:.3s;backdrop-filter:blur(8px)}
+.gold-btn:hover{transform:translateY(-3px);background:rgba(255,255,255,.18)}
+.music-btn{position:fixed;right:18px;top:18px;z-index:30;border:1px solid rgba(255,255,255,.35);background:#4b2869;color:white;border-radius:30px;padding:9px 14px;cursor:pointer;box-shadow:0 5px 20px #0002}
+.section{max-width:1100px;margin:auto;padding:90px 22px}
+.card,.subject-card,.letter-paper,.final-card{box-shadow:0 18px 50px rgba(72,42,80,.10)}
+.card{background:white;border-radius:28px;padding:55px 30px;text-align:center;max-width:800px;margin:auto;border:1px solid #eee1e7}
+.card-icon{font-size:3rem}
+.section h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,5vw,3.3rem);margin:10px 0 18px}
+.card p,.letter-paper p{line-height:1.9;color:#644f67}
+.small-note{font-size:.9rem;font-style:italic}
+.subjects{text-align:center}
+.subject-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:35px}
+.subject-card{background:#fff;border-radius:24px;padding:35px;border:1px solid #eee1e7}
+.big-icon{font-size:3rem}.subject-card h3{font-family:"Cormorant Garamond",serif;font-size:2rem;margin:10px}
+.subject-card p{line-height:1.7;color:#6c5b6d}
+.letter{background:linear-gradient(180deg,#f7eee8,#fbf6f0);max-width:none}
+.letter-paper{max-width:800px;margin:auto;background:#fffdf8;border-radius:5px;padding:55px clamp(25px,7vw,75px);border:1px solid #e9d7bd;position:relative}
+.letter-paper:before{content:"❀";position:absolute;top:18px;right:25px;color:#d29b5d;font-size:2rem}
+.letter-paper h2{font-family:"Cormorant Garamond",serif;font-size:2.7rem}
+.signature{text-align:right;margin-top:35px!important;font-family:"Cormorant Garamond",serif;font-size:1.35rem}
+.memories{text-align:center}
+.section-note{color:#766478;font-size:.9rem}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}
+.photo-card{margin:0;background:white;padding:10px;border-radius:18px;box-shadow:0 15px 35px #4b286914;transform:rotate(-1deg);transition:.3s}
+.photo-card:nth-child(2){transform:rotate(1.2deg)}.photo-card:hover{transform:translateY(-8px) rotate(0)}
+.photo-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:#eee}
+.photo-card figcaption{padding:13px 5px 8px;font-family:"Cormorant Garamond",serif;font-size:1.2rem}
+.final{padding-top:30px;padding-bottom:110px}
+.final-card{text-align:center;background:linear-gradient(135deg,#4b2869,#85549b);color:white;border-radius:30px;padding:60px 25px;position:relative;overflow:hidden}
+.final-card h2{color:#ffe9b6}.final-card p{line-height:1.8}.crown{font-size:2rem;color:#f8d999}
+.final-line{font-family:"Cormorant Garamond",serif;font-size:1.6rem}.final-card h3{font-family:"Playfair Display",serif;font-size:1.8rem;color:#ffe9b6}
+.from{margin-top:30px}.final-card .ornament{margin-bottom:8px}
+footer{text-align:center;padding:25px;background:#2e1b3d;color:#d9c9df;font-size:.75rem;letter-spacing:.5px}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:700px){.subject-grid,.gallery{grid-template-columns:1fr}.section{padding:65px 16px}.hero{min-height:92vh}.music-btn span{display:none}.letter-paper{padding:45px 24px}}

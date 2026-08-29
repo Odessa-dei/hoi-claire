@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#6b3fa0">
+<title>Happy Teacher's Day, Madam Rani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="petals"></div>
+
+<audio id="bgMusic" loop preload="metadata">
+  <source src="music/teacher-day.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" id="musicBtn" aria-label="Play music">♫ <span>Music</span></button>
+
+<header class="hero">
+  <div class="sparkles"></div>
+  <p class="eyebrow">A little surprise from your student</p>
+  <h1>Happy Teacher's Day</h1>
+  <div class="ornament">✦ ❀ ✦</div>
+  <h2>Madam Rani</h2>
+  <p class="hero-sub">Social Science • Hindi</p>
+  <button class="gold-btn" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">
+    Open Your Surprise <span>↓</span>
+  </button>
+</header>
+
+<main>
+<section class="intro section reveal">
+  <div class="card">
+    <span class="card-icon">🎓</span>
+    <h2>For a Teacher Who Makes a Difference</h2>
+    <p>
+      Dear Madam Rani, some teachers teach from books, but the truly special ones
+      leave lessons in our hearts. Thank you for making Social Science and Hindi
+      more than just subjects on a timetable.
+    </p>
+    <p class="small-note">And yes... we promise we remembered the homework. Probably. 😄</p>
+  </div>
+</section>
+
+<section class="subjects section reveal">
+  <p class="eyebrow">Two subjects, countless memories</p>
+  <h2>📚 Social Science & Hindi</h2>
+  <div class="subject-grid">
+    <article class="subject-card">
+      <div class="big-icon">🌍</div>
+      <h3>Social Science</h3>
+      <p>History, geography, civics and the many stories that help us understand the world.</p>
+    </article>
+    <article class="subject-card">
+      <div class="big-icon">🪷</div>
+      <h3>Hindi</h3>
+      <p>Words, stories and expressions that remind us how powerful language can be.</p>
+    </article>
+  </div>
+</section>
+
+<section class="letter section reveal" id="letter">
+  <div class="letter-paper">
+    <p class="eyebrow">A letter from Deinunlhing</p>
+    <h2>Dear Madam Rani,</h2>
+    <p>
+      Happy Teacher's Day! ❤️
+    </p>
+    <p>
+      I may not always say it out loud, but I am truly grateful to have you as my
+      teacher. You have taught us much more than Social Science and Hindi. Through
+      your classes, your patience, your explanations, and even those moments when
+      we were a little too noisy, you have given us lessons that will stay with us.
+    </p>
+    <p>
+      Thank you for explaining things again when we didn't understand, for
+      encouraging us when we doubted ourselves, and for believing that we could do
+      better even when our notebooks seemed to disagree with that idea.
+    </p>
+    <p>
+      Your classes have given us knowledge, but your kindness has given us
+      confidence. That is something a textbook can never teach.
+    </p>
+    <p>
+      I hope you know how much you are appreciated. Every lesson you teach,
+      every correction you make, every smile you share, and every little moment
+      you spend helping us becomes part of our school memories.
+    </p>
+    <p>
+      So today, I simply want to say:
+      <strong>Thank you for being an amazing teacher, Madam Rani.</strong>
+    </p>
+    <p class="signature">With heartfelt gratitude,<br><strong>Deinunlhing Kholhou</strong><br>Don Bosco High School</p>
+  </div>
+</section>
+
+<section class="memories section reveal">
+  <p class="eyebrow">A place for your photographs</p>
+  <h2>📸 Beautiful Memories</h2>
+  <p class="section-note">Replace the three files in the <strong>photos</strong> folder with your own photos. Keep the filenames the same.</p>
+  <div class="gallery">
+    <figure class="photo-card">
+      <img src="photos/photo1.jpg" alt="Teacher's Day memory 1" onerror="this.src='photos/placeholder.svg'">
+      <figcaption>A beautiful memory ✨</figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="photos/photo2.jpg" alt="Teacher's Day memory 2" onerror="this.src='photos/placeholder.svg'">
+      <figcaption>Moments worth remembering 🌸</figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="photos/photo3.jpg" alt="Teacher's Day memory 3" onerror="this.src='photos/placeholder.svg'">
+      <figcaption>Thank you for everything 💖</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="final section reveal">
+  <div class="final-card">
+    <div class="crown">✦</div>
+    <h2>Thank You, Madam Rani</h2>
+    <p>For teaching. For encouraging. For caring.</p>
+    <p class="final-line">You are not just a teacher in our school memories.<br>You are part of them.</p>
+    <div class="ornament">❀ ✦ ❀</div>
+    <h3>Happy Teacher's Day! 🌷</h3>
+    <p class="from">With love and respect,<br><strong>Deinunlhing Kholhou</strong></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  Made especially for Madam Rani • Don Bosco High School
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
